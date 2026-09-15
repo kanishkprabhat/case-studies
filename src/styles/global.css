@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #10090B;
+    --burgundy: #1B0B0F;
+    --panel: #260C12;
+    --red-dark: #3A0E14;
+    --red: #E32938;
+    --red-bright: #FF3344;
+    --red-muted: #8E2935;
+    --cream: #F5EDE3;
+    
+    /* New text colors */
+    --text-primary: #F5EDE3;
+    --text-secondary: #C7B7B5;
+    --text-muted: #8E7C7F;
+  }
+
+  body {
+    @apply bg-[var(--bg)] text-[var(--text-primary)] font-sans antialiased selection:bg-[var(--red)] selection:text-white;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-pixel;
+  }
+}
+
+@layer components {
+  .section {
+    padding-block: clamp(56px, 7vw, 96px);
+  }
+  .pixel-panel {
+    @apply bg-[var(--panel)] border border-[var(--red-dark)] rounded-sm relative overflow-hidden;
+  }
+  
+  .pixel-panel::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none;
+    background-image: radial-gradient(circle, rgba(227, 41, 56, 0.05) 1px, transparent 1px);
+    background-size: 4px 4px;
+    opacity: 0.5;
+  }
+  
+  .case-study-container {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+  }
+}

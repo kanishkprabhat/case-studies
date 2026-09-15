@@ -1,0 +1,543 @@
+---
+import CaseStudyLayout from '../../components/CaseStudyLayout.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import CreativeCard from '../../components/CreativeCard.astro';
+import InsightCard from '../../components/InsightCard.astro';
+---
+
+<CaseStudyLayout title="Dwell Construction - Case Study">
+  
+  {/* Hero Section */}
+  <section class="relative h-[85vh] min-h-[650px] mb-12 rounded-sm overflow-hidden border-2 border-[var(--red-dark)] group shadow-2xl">
+    <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)] via-[var(--bg)]/80 to-[var(--red-dark)]/50 z-10"></div>
+    {/* Architectural Silhouette / Dark Dummy Image */}
+    <div class="absolute inset-0 bg-[var(--panel)] flex items-end justify-center overflow-hidden">
+      <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGw0MCA0ME00MCAwbC00MCA0MCIgc3Ryb2tlPSIjRTMyOTM4IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=')] bg-repeat"></div>
+      
+      {/* Stronger Abstract building silhouette */}
+      <div class="relative w-full h-[70%] flex items-end justify-center opacity-40 gap-2 md:gap-6 blur-[0.5px]">
+        <div class="w-1/6 h-[60%] bg-[var(--red-dark)] border-t border-l border-[var(--red)] shadow-[0_0_30px_rgba(227,41,56,0.2)]"></div>
+        <div class="w-1/4 h-full bg-[var(--red-dark)] border-t-2 border-[var(--red)] shadow-[0_0_40px_rgba(227,41,56,0.3)]"></div>
+        <div class="w-1/5 h-[80%] bg-[var(--red-dark)] border-t border-[var(--red)] shadow-[0_0_30px_rgba(227,41,56,0.2)]"></div>
+        <div class="w-1/6 h-[50%] bg-[var(--red-dark)] border-t border-[var(--red)]"></div>
+      </div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 font-mono text-sm md:text-lg text-[var(--red-bright)] tracking-widest bg-black/70 px-8 py-4 border border-[var(--red-dark)] backdrop-blur-md whitespace-nowrap shadow-xl">[ ARCHITECTURAL COMPOSITION ]</div>
+    </div>
+    
+    <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-16 lg:p-24">
+      <span class="inline-block px-5 py-2 bg-[var(--red-dark)] text-[var(--text-primary)] font-mono text-[11px] md:text-sm mb-10 w-max tracking-widest border border-[var(--red)] shadow-sm uppercase">Real Client Campaign / Meta Ads</span>
+      <h1 class="font-pixel text-[clamp(1.8rem,6.5vw,3.75rem)] text-white mb-10 leading-[1.2] tracking-tight drop-shadow-lg">DWELL<br/>CONSTRUCTION</h1>
+      <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-3xl font-sans mb-14 leading-[1.8] drop-shadow-md">
+        A targeted Meta Lead Generation campaign focused on interior design and terrace garden construction in Delhi NCR & Meerut.
+      </p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 font-mono text-[12px] md:text-[13px] border-t border-[var(--red-dark)] pt-10">
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Objective</span>
+          <span class="text-[var(--text-primary)]">Lead Generation</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Period</span>
+          <span class="text-[var(--text-primary)]">17–24 Aug 2026</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Location</span>
+          <span class="text-[var(--text-primary)]">Delhi NCR + Meerut</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Budget</span>
+          <span class="text-[var(--text-primary)]">₹500/day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Player / Campaign Identity Panel */}
+  <section class="section">
+    <div class="pixel-panel p-10 md:p-16 flex flex-col lg:flex-row gap-16 items-center lg:items-start shadow-2xl shadow-[var(--red-dark)]/20 border-t-[6px] border-t-[var(--red)] border-l-0 bg-[var(--burgundy)]">
+      
+      <div class="w-56 h-56 md:w-64 md:h-64 shrink-0 bg-black border-2 border-[var(--red-dark)] relative overflow-hidden group">
+        <img src="/pixel-assets/operator-avatar.jpg" alt="Kanishk Prabhat - Campaign Operator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-[var(--red)]/10 mix-blend-overlay pointer-events-none"></div>
+      </div>
+      
+      <div class="flex-grow flex flex-col justify-center pt-2 w-full">
+        <div class="font-mono text-[var(--text-muted)] text-[11px] md:text-[12px] mb-4 tracking-widest">CAMPAIGN OPERATOR</div>
+        <h2 class="font-pixel text-2xl md:text-3xl text-[var(--text-primary)] mb-6 tracking-wide drop-shadow-sm">KANISHK PRABHAT</h2>
+        <div class="font-mono text-[var(--red-bright)] text-sm md:text-base mb-12 tracking-widest leading-[1.8]">END-TO-END CAMPAIGN EXECUTION</div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 pt-10 border-t border-[var(--red-dark)]">
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">STATUS</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] flex items-center gap-3 tracking-wide">
+              <span class="w-2.5 h-2.5 rounded-full bg-[var(--text-muted)]"></span> COMPLETED
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">SYSTEM</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide">META ADS</div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">MISSION</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide leading-relaxed">GENERATE QUALIFIED PROSPECTS</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  {/* Overview Section */}
+  <section class="section">
+    <SectionHeading index="01" title="Project Overview" />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 mb-16">
+      <div>
+        <h3 class="font-mono text-lg text-[var(--red-bright)] mb-8 tracking-wider uppercase">The Business</h3>
+        <div class="prose prose-invert prose-p:text-[var(--text-secondary)] prose-p:font-sans prose-p:text-[15px] prose-p:leading-[1.75] max-w-none">
+          <p>Dwell Construction provides residential and commercial design and construction services, including terrace garden design and construction, residential design and construction, interior design, and commercial-space design and construction.</p>
+          <p>For this campaign, the immediate focus was <strong>Terrace Garden</strong> as the primary priority, followed by <strong>Interior Design</strong>.</p>
+        </div>
+      </div>
+      <div class="pixel-panel p-10 md:p-12 bg-[var(--panel)] border-l-4 border-l-[var(--red-dark)] border-t-0 border-r-0 border-b-0">
+        <h3 class="font-mono text-lg text-[var(--text-primary)] mb-10 tracking-wider uppercase">Campaign Objective</h3>
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.75] mb-8">
+          The primary objective was to generate qualified prospects for Dwell Construction's services.
+        </p>
+        <ul class="space-y-8 font-sans text-[15px] text-[var(--text-secondary)] leading-[1.75]">
+          <li class="flex flex-col gap-2">
+            <span class="font-mono text-[var(--red-bright)] tracking-widest text-sm">TERRACE GARDEN &rarr; INSTANT FORM</span>
+            <span>Capture project and qualification information before the prospect moved further into the sales process.</span>
+          </li>
+          <li class="flex flex-col gap-2">
+            <span class="font-mono text-[var(--red-bright)] tracking-widest text-sm">INTERIOR DESIGN &rarr; WHATSAPP</span>
+            <span>Allow prospects to initiate a direct conversation about their requirements.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-[var(--red-dark)] pt-16">
+      <h3 class="font-mono text-lg text-[var(--text-primary)] mb-10 tracking-wider uppercase">Audience Strategy</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div class="font-mono text-[var(--red-bright)] text-sm mb-3 tracking-widest">LOCATION</div>
+          <div class="font-sans text-[var(--text-primary)] font-bold mb-2">Delhi NCR + Meerut</div>
+          <div class="font-sans text-[14px] text-[var(--text-secondary)] leading-relaxed">Delhi NCR was selected as the primary service area. Meerut was included based on client requirement.</div>
+        </div>
+        <div>
+          <div class="font-mono text-[var(--red-bright)] text-sm mb-3 tracking-widest">AGE</div>
+          <div class="font-sans text-[var(--text-primary)] font-bold mb-2">25–60</div>
+          <div class="font-sans text-[14px] text-[var(--text-secondary)] leading-relaxed">Focused on an audience likely to be in a stage of life where home improvement is relevant.</div>
+        </div>
+        <div>
+          <div class="font-mono text-[var(--red-bright)] text-sm mb-3 tracking-widest">GENDER</div>
+          <div class="font-sans text-[var(--text-primary)] font-bold mb-2">All genders</div>
+          <div class="font-sans text-[14px] text-[var(--text-secondary)] leading-relaxed">Kept broad rather than restricting without a strong initial reason to exclude either gender.</div>
+        </div>
+        <div>
+          <div class="font-mono text-[var(--red-bright)] text-sm mb-3 tracking-widest">PLACEMENT</div>
+          <div class="font-sans text-[var(--text-primary)] font-bold mb-2">Advantage+ Placements</div>
+          <div class="font-sans text-[14px] text-[var(--text-secondary)] leading-relaxed">Allowed Meta's available Facebook and Instagram placements rather than manually restricting at launch.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Campaign Architecture */}
+  <section class="section">
+    <SectionHeading index="02" title="Campaign Architecture" />
+    <div class="pixel-panel p-8 md:p-20 overflow-x-auto bg-black border-2 border-[var(--red-dark)] shadow-xl shadow-[var(--bg)] mb-12">
+      <div class="min-w-[800px] flex flex-col items-center font-mono">
+        
+        {/* Root */}
+        <div class="bg-[var(--burgundy)] text-[var(--text-primary)] px-8 py-5 border-[3px] border-[var(--red-dark)] font-bold tracking-[0.2em] text-[15px] shadow-[6px_6px_0_0_var(--red-dark)] z-10 relative text-center">
+          DWELL CONSTRUCTION — LEADS
+        </div>
+        
+        {/* Vertical line from root */}
+        <div class="w-px h-12 bg-[var(--red-muted)]"></div>
+        
+        {/* Horizontal branch line */}
+        <div class="w-[500px] h-px bg-[var(--red-muted)] relative">
+          <div class="absolute left-0 top-0 w-px h-10 bg-[var(--red-muted)]"></div>
+          <div class="absolute right-0 top-0 w-px h-10 bg-[var(--red-muted)]"></div>
+        </div>
+        
+        {/* Branches */}
+        <div class="flex w-[600px] justify-between mt-10 relative">
+          
+          {/* Branch 1 */}
+          <div class="flex flex-col items-center w-64">
+            <div class="bg-[var(--panel)] text-white px-6 py-4 border-2 border-[var(--red)] w-full text-center tracking-widest mb-6 font-bold text-[13px] shadow-[4px_4px_0_0_var(--red-dark)] flex flex-col gap-2">
+              <span>TERRACE GARDEN</span>
+              <span class="text-[10px] text-[var(--text-secondary)] bg-[var(--red-dark)] px-2 py-1 mx-auto border border-[var(--red)]">₹300/day (Primary)</span>
+            </div>
+            <div class="w-px h-8 bg-[var(--red-muted)]"></div>
+            <div class="bg-transparent text-[var(--text-secondary)] p-5 border border-dashed border-[var(--text-muted)]/40 w-full text-center leading-[2] text-[12px] tracking-widest">
+              <div class="text-[var(--text-primary)] mb-2">DESIRE</div>
+              <div class="text-[var(--text-primary)] mb-2">HOOK</div>
+              <div class="text-[var(--text-primary)]">TESTIMONIAL</div>
+            </div>
+          </div>
+          
+          {/* Branch 2 */}
+          <div class="flex flex-col items-center w-64">
+            <div class="bg-[var(--panel)] text-[var(--text-primary)] px-6 py-4 border-2 border-[var(--text-muted)] w-full text-center tracking-widest mb-6 font-bold text-[13px] shadow-[4px_4px_0_0_var(--red-dark)] flex flex-col gap-2">
+              <span>INTERIOR DESIGN</span>
+              <span class="text-[10px] text-[var(--text-muted)] bg-[var(--burgundy)] px-2 py-1 mx-auto border border-[var(--text-muted)]">₹200/day (Secondary)</span>
+            </div>
+            <div class="w-px h-8 bg-[var(--red-muted)]"></div>
+            <div class="bg-transparent text-[var(--text-secondary)] p-5 border border-dashed border-[var(--text-muted)]/40 w-full text-center leading-[2] text-[12px] tracking-widest">
+              <div class="text-[var(--text-primary)] mb-2">BEFORE_ITS_BUILT</div>
+              <div class="text-[var(--text-primary)]">MAKEOVER</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8]">
+        <strong class="text-[var(--text-primary)] block mb-4">Why this structure?</strong>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>Allocate budget according to business priority.</li>
+          <li>Evaluate each service independently.</li>
+          <li>Use different conversion paths.</li>
+          <li>Compare creative performance within each service.</li>
+          <li>Avoid treating two different customer journeys as one identical campaign.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* Creative Showcase */}
+  <section class="section">
+    <SectionHeading index="03" title="Creative Strategy" />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+      <CreativeCard 
+        name="Desire" 
+        category="TERRACE GARDEN" 
+        description="The concept compared an ordinary terrace with what the space could become through a professionally designed terrace garden. The objective was to help the viewer visualize the possibility for their own terrace, create aspiration, and then move them toward requesting a quote." 
+        placeholderText="DESIRE PREVIEW" 
+        patternIndex={1}
+        funnelRole="Desire → Consideration → Lead"
+        videoUrl="/videos/desire.mp4"
+        aspectClass="aspect-[9/16]"
+      />
+      <CreativeCard 
+        name="Hook" 
+        category="TERRACE GARDEN" 
+        description="The Hook creative used a project/process-oriented approach designed to capture attention and lead the viewer toward the project reveal." 
+        placeholderText="HOOK PREVIEW" 
+        patternIndex={2}
+        funnelRole="Attention → Interest → Lead"
+        videoUrl="/videos/Hook.mp4"
+        aspectClass="aspect-[9/16]"
+      />
+      <CreativeCard 
+        name="Testimonial" 
+        category="TERRACE GARDEN" 
+        description="Used an actual customer testimonial from a completed terrace garden project. The purpose was to introduce social proof and trust." 
+        placeholderText="TESTIMONIAL PREVIEW" 
+        patternIndex={3}
+        funnelRole="Trust → Consideration → Lead"
+        videoUrl="/videos/Testimonial%20Dwell%20.mp4"
+        aspectClass="aspect-[9/16]"
+      />
+      <CreativeCard 
+        name="Before_its_built" 
+        category="INTERIOR DESIGN" 
+        description="This creative used a rendered interior design video to help potential customers visualize what a completed interior could look like." 
+        placeholderText="RENDER PREVIEW" 
+        patternIndex={4}
+        funnelRole="Visualization → Interest → Conversation"
+        aspectClass="aspect-[9/16]"
+        videoUrl="/videos/before_its_built.mp4"
+      />
+      <CreativeCard 
+        name="Makeover" 
+        category="INTERIOR DESIGN" 
+        description="The Makeover creative focused on the transformation of a home's appearance through interior design." 
+        placeholderText="MAKEOVER PREVIEW" 
+        patternIndex={1}
+        funnelRole="Transformation → Interest → Conversation"
+        aspectClass="aspect-[9/16]"
+        videoUrl="/videos/makeover.mp4"
+      />
+    </div>
+  </section>
+
+  {/* Conversion Paths */}
+  <section class="section">
+    <SectionHeading index="04" title="Conversion Strategy" />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      
+      {/* Path A */}
+      <div class="flex flex-col font-mono text-[12px] md:text-[13px]">
+        <h4 class="font-pixel text-[18px] text-[var(--red-bright)] mb-6">TERRACE GARDEN</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7] mb-10 pb-6 border-b border-[var(--red-dark)]">
+          I used Meta Instant Forms to collect more structured information from potential prospects. The form included name, phone number, project location, budget, and expected project timeline. I also introduced OTP verification as an additional layer to reduce low-intent submissions.
+        </p>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">01</span>
+          <div class="flex-grow bg-[var(--panel)] p-5 text-[var(--text-secondary)] border border-[var(--red-dark)] tracking-widest shadow-sm">AD</div>
+        </div>
+        <div class="text-[var(--red-bright)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">02</span>
+          <div class="flex-grow bg-[var(--red-dark)] p-6 text-[var(--text-primary)] border border-[var(--red)] tracking-[0.2em] shadow-md font-bold text-[14px]">META INSTANT FORM</div>
+        </div>
+        <div class="text-[var(--red-bright)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">03</span>
+          <div class="flex-grow bg-[var(--panel)] p-5 text-[var(--text-secondary)] border border-[var(--red-dark)] tracking-widest shadow-sm">LEAD DETAILS</div>
+        </div>
+        <div class="text-[var(--red-bright)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">04</span>
+          <div class="flex-grow bg-[var(--panel)] p-5 text-[var(--text-secondary)] border border-[var(--red-dark)] tracking-widest shadow-sm">OTP VERIFICATION</div>
+        </div>
+        <div class="text-[var(--red-bright)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6">
+          <span class="text-lg text-[var(--text-muted)] font-bold">05</span>
+          <div class="flex-grow bg-[#1a2e20] p-6 text-green-400 border border-[#2e5239] tracking-[0.2em] shadow-sm font-bold text-[14px]">FOLLOW-UP</div>
+        </div>
+      </div>
+      
+      {/* Path B */}
+      <div class="flex flex-col font-mono text-[12px] md:text-[13px]">
+        <h4 class="font-pixel text-[18px] text-[var(--text-primary)] mb-6">INTERIOR DESIGN</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7] mb-10 pb-6 border-b border-[var(--red-dark)]">
+          For Interior Design, I used WhatsApp as the conversion location. The idea was to reduce friction and allow prospects to directly communicate their requirements with the business.
+        </p>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">01</span>
+          <div class="flex-grow bg-[var(--burgundy)] p-5 text-[var(--text-secondary)] border border-[var(--red-dark)] tracking-widest shadow-sm">AD</div>
+        </div>
+        <div class="text-[var(--text-muted)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">02</span>
+          <div class="flex-grow bg-[var(--panel)] p-6 text-[var(--text-primary)] border border-[var(--text-muted)] tracking-[0.2em] shadow-md font-bold text-[14px]">WHATSAPP CONVERSATION</div>
+        </div>
+        <div class="text-[var(--text-muted)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6 mb-5">
+          <span class="text-lg text-[var(--text-muted)] font-bold">03</span>
+          <div class="flex-grow bg-[var(--burgundy)] p-5 text-[var(--text-secondary)] border border-[var(--red-dark)] tracking-widest shadow-sm">QUALIFICATION</div>
+        </div>
+        <div class="text-[var(--text-muted)] text-xl pl-[38px] mb-5">↓</div>
+        
+        <div class="flex items-center gap-6">
+          <span class="text-lg text-[var(--text-muted)] font-bold">04</span>
+          <div class="flex-grow bg-[#1a2e20] p-6 text-green-400 border border-[#2e5239] tracking-[0.2em] shadow-sm font-bold text-[14px]">CONSULTATION BOOKED</div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  {/* Timeline */}
+  <section class="section">
+    <SectionHeading index="05" title="Launch & Execution" />
+    <div class="pixel-panel p-10 md:p-24 bg-[var(--burgundy)] border-t-[4px] border-[var(--red-dark)]">
+      <div class="max-w-4xl mx-auto relative border-l-[3px] border-[var(--red)] ml-4 md:ml-12 space-y-24 pb-12">
+        
+        <div class="relative pl-12 md:pl-20">
+          <div class="absolute w-7 h-7 bg-[var(--bg)] rounded-none left-[-15px] top-1 border-[4px] border-[var(--red)] flex items-center justify-center">
+            <div class="w-2.5 h-2.5 bg-[var(--red)]"></div>
+          </div>
+          <div class="flex items-center gap-6 mb-5">
+            <div class="font-mono text-[18px] text-[var(--text-muted)] font-bold">01</div>
+            <span class="text-[11px] font-mono bg-[var(--red-dark)] text-[var(--text-primary)] px-3 py-1.5 tracking-widest border border-[var(--red)]">DAY 1-2</span>
+          </div>
+          <h4 class="font-pixel text-[20px] md:text-[24px] text-white mb-6 leading-tight">Launch & Early Performance</h4>
+          <p class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-2xl mb-4">
+            Day 1 generated 4 leads, and Day 2 brought 6 new leads. The early response indicated that the campaign was generating demand immediately.
+          </p>
+          <p class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-2xl">
+            At the creative level, <strong>Desire</strong> emerged as a particularly strong-performing creative within the Terrace Garden ad set. At the same time, <strong>Before_its_built</strong> was generating messaging conversations for Interior Design.
+          </p>
+        </div>
+        
+        <div class="relative pl-12 md:pl-20">
+          <div class="absolute w-7 h-7 bg-[var(--burgundy)] rounded-none left-[-15px] top-1 border-[3px] border-[var(--text-secondary)]"></div>
+          <div class="flex items-center gap-6 mb-5">
+            <div class="font-mono text-[18px] text-[var(--text-muted)] font-bold">02</div>
+            <span class="text-[11px] font-mono border border-[var(--red-bright)] text-[var(--red-bright)] px-3 py-1.5 tracking-widest">DAY 4</span>
+          </div>
+          <h4 class="font-pixel text-[20px] md:text-[24px] text-[var(--text-primary)] mb-6 leading-tight">The Unexpected Creative Change</h4>
+          <p class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-2xl">
+            The Desire creative had to be removed after the initial four days. It was not removed because of poor performance; it had been one of the strongest-performing creatives. The creative was subsequently removed at the client's request because of a <strong>third-party ownership/usage concern</strong> involving the project featured in the video.
+          </p>
+        </div>
+
+        <div class="relative pl-12 md:pl-20">
+          <div class="absolute w-7 h-7 bg-[var(--burgundy)] rounded-none left-[-15px] top-1 border-[3px] border-[var(--text-secondary)]"></div>
+          <div class="flex items-center gap-6 mb-5">
+            <div class="font-mono text-[18px] text-[var(--text-muted)] font-bold">03</div>
+            <span class="text-[11px] font-mono border border-[var(--text-muted)] bg-[var(--panel)] text-[var(--text-primary)] px-3 py-1.5 tracking-widest">RESPONSE</span>
+          </div>
+          <h4 class="font-pixel text-[20px] md:text-[24px] text-[var(--text-primary)] mb-6 leading-tight">Adaptation & Continued Delivery</h4>
+          <p class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-2xl">
+            I expected that removing a strong-performing creative could negatively affect campaign performance. However, because the campaign was still in its learning phase, I chose <strong>not to make additional unnecessary changes immediately</strong> and allowed the remaining creatives to continue running. The Testimonial creative subsequently began generating leads.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {/* Performance Metrics */}
+  <section class="section">
+    <SectionHeading index="06" title="Campaign Results" />
+    
+    <div class="mb-20">
+      <h3 class="font-mono text-[13px] text-[var(--text-muted)] mb-8 tracking-[0.15em] uppercase border-b border-[var(--red-dark)] pb-4 inline-block">Overall Campaign Performance</h3>
+      <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
+        <MetricCard label="TOTAL SPEND" value="₹3,389.80" />
+        <MetricCard label="REACH" value="19,384" />
+        <MetricCard label="IMPRESSIONS" value="25,520" />
+        <MetricCard label="FREQUENCY" value="1.32" />
+      </div>
+    </div>
+
+    <div class="mb-20">
+      <h3 class="font-mono text-[13px] text-[var(--text-muted)] mb-8 tracking-[0.15em] uppercase border-b border-[var(--red-dark)] pb-4 inline-block">By Conversion Path</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+        <div class="pixel-panel p-10 md:p-14 border-l-[6px] border-l-[var(--red)] bg-gradient-to-br from-[var(--panel)] to-[var(--burgundy)] shadow-lg hover:-translate-y-1 transition-transform duration-300">
+          <h4 class="font-mono text-[15px] text-[var(--red-bright)] mb-10 tracking-[0.15em] uppercase font-bold">TERRACE GARDEN</h4>
+          <div class="flex flex-col md:flex-row md:justify-between md:items-end border-b border-[var(--red-dark)] pb-8 mb-8 gap-4">
+            <div class="font-sans text-[20px] text-[var(--text-primary)]">Form Leads</div>
+            <div class="font-pixel text-[clamp(2.5rem,7vw,5rem)] text-white leading-none">31</div>
+          </div>
+          <div class="flex justify-between items-center font-mono text-[13px] md:text-[14px]">
+            <span class="text-[var(--text-secondary)]">Cost Per Lead</span>
+            <span class="text-white font-bold bg-[var(--red-dark)] px-4 py-2 border border-[var(--red)] tracking-wider">₹66.19</span>
+          </div>
+        </div>
+        
+        <div class="pixel-panel p-10 md:p-14 border-l-[6px] border-l-[var(--text-secondary)] bg-[var(--burgundy)] shadow-lg hover:-translate-y-1 transition-transform duration-300">
+          <h4 class="font-mono text-[15px] text-[var(--text-secondary)] mb-10 tracking-[0.15em] uppercase font-bold">INTERIOR DESIGN</h4>
+          <div class="flex flex-col md:flex-row md:justify-between md:items-end border-b border-[var(--red-dark)] pb-8 mb-8 gap-4">
+            <div class="font-sans text-[20px] text-[var(--text-primary)]">Messaging Conversations</div>
+            <div class="font-pixel text-[clamp(2.5rem,7vw,5rem)] text-white leading-none">38</div>
+          </div>
+          <div class="flex justify-between items-center font-mono text-[13px] md:text-[14px]">
+            <span class="text-[var(--text-secondary)]">Cost Per Conversation</span>
+            <span class="text-white font-bold bg-[var(--panel)] px-4 py-2 border border-[var(--text-muted)] tracking-wider">₹35.21</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 font-sans text-[14px] text-[var(--text-muted)] bg-[var(--panel)] p-6 border-l-4 border-l-[var(--red-muted)] leading-relaxed">
+        <strong>Important:</strong> These results should not be combined into a single "69 leads" figure because they represent different conversion actions: form submissions versus messaging conversations.
+      </div>
+    </div>
+    
+    <div>
+      <h3 class="font-mono text-[13px] text-[var(--text-muted)] mb-8 tracking-[0.15em] uppercase border-b border-[var(--red-dark)] pb-4 inline-block">Lead Quality & Sales Handoff</h3>
+      <div class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] space-y-4 max-w-4xl">
+        <p>My responsibility in this campaign was <strong>lead generation and qualification</strong>, not closing the client's sales. I therefore did not attribute final customers, revenue, or ROAS to the campaign without verified client-side data.</p>
+        <p>I did, however, cross-check lead quality with the client. The client subsequently issued approximately <strong>8–10 quotations</strong> to prospects generated through the campaign.</p>
+        <p class="text-[13px] italic text-[var(--text-muted)] mt-4">Scope note: Final closed sales and revenue were not tracked within my campaign scope, so I have not claimed them as campaign conversions.</p>
+      </div>
+    </div>
+  </section>
+
+  {/* Insights Section */}
+  <section class="section">
+    <SectionHeading index="07" title="What the Campaign Demonstrated" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
+      <InsightCard 
+        category="Insight 1" 
+        title="Creative strategy mattered" 
+        description="Different creative angles produced different responses. Desire was particularly effective at generating initial response for Terrace Garden, while Testimonial demonstrated its ability to generate leads after Desire was removed." 
+      />
+      <InsightCard 
+        category="Insight 2" 
+        title="Conversion design should match the service" 
+        description="I did not force both services into the same conversion mechanism: Terrace Garden used Instant Forms for structured qualification, while Interior Design used WhatsApp for direct communication." 
+      />
+      <InsightCard 
+        category="Insight 3" 
+        title="Performance data isn't the only constraint" 
+        description="Desire was performing well, but it still had to be removed because of a business/usage constraint. The highest-performing creative isn't always the creative you are allowed to keep running." 
+      />
+      <InsightCard 
+        category="Insight 4" 
+        title="Avoid unnecessary intervention" 
+        description="After Desire was removed, I did not immediately restructure the campaign or make multiple simultaneous changes. The remaining Testimonial creative subsequently began producing leads." 
+      />
+    </div>
+    
+    <div class="border-t border-[var(--red-dark)] pt-16">
+      <h3 class="font-pixel text-[24px] text-white mb-8">What I Would Test Next</h3>
+      <ul class="list-disc pl-5 space-y-3 font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl">
+        <li>Create more variations based on the strongest-performing creative angles.</li>
+        <li>Develop additional testimonial-based creatives.</li>
+        <li>Use more real-project footage where available rather than relying heavily on renders.</li>
+        <li>Test different hooks around the same core offer.</li>
+        <li>Compare Instant Form qualification against WhatsApp for the same service where appropriate.</li>
+        <li>Improve downstream tracking from lead &rarr; qualified &rarr; quotation &rarr; customer.</li>
+        <li>Evaluate future optimization using cost per qualified lead and eventual customer value, not only cost per lead.</li>
+      </ul>
+    </div>
+  </section>
+
+  {/* Takeaway & Tools */}
+  <section class="section border-t border-[var(--red-dark)]">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+      
+      <div class="lg:col-span-2">
+        <h3 class="font-pixel text-[24px] text-white mb-8">15. Key Takeaway</h3>
+        <blockquote class="border-l-4 border-l-[var(--red)] pl-8 py-2 mb-10 bg-[var(--panel)] p-6 shadow-md">
+          <p class="font-sans text-[18px] text-[var(--text-primary)] leading-[1.8] italic">
+            "This campaign taught me that performance marketing is not simply about launching ads and watching metrics. It involves making structured decisions around audience, budget, creative, conversion paths, and lead quality — while adapting to real-world business constraints."
+          </p>
+        </blockquote>
+        <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] mb-6">
+          The campaign generated <strong>31 form leads</strong> and <strong>38 messaging conversations</strong> from ₹3,389.80 in spend, while client feedback indicated approximately <strong>8–10 quotations</strong> were issued to generated prospects.
+        </p>
+        <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8]">
+          More importantly, the campaign gave me hands-on experience managing a real paid-media campaign from planning and setup through launch, creative evaluation, lead qualification, and post-launch decision-making.
+        </p>
+      </div>
+      
+      <div>
+        <h3 class="font-pixel text-[20px] text-white mb-8">Tools & Platforms</h3>
+        <ul class="space-y-6 font-sans text-[14px]">
+          <li class="border-b border-[var(--red-dark)] pb-4">
+            <strong class="text-[var(--red-bright)] block mb-1">Meta Ads Manager</strong>
+            <span class="text-[var(--text-secondary)]">Campaign setup, audience targeting, budget allocation, ad delivery, creative management and performance monitoring.</span>
+          </li>
+          <li class="border-b border-[var(--red-dark)] pb-4">
+            <strong class="text-[var(--red-bright)] block mb-1">Meta Instant Forms</strong>
+            <span class="text-[var(--text-secondary)]">Lead capture and qualification.</span>
+          </li>
+          <li class="border-b border-[var(--red-dark)] pb-4">
+            <strong class="text-[var(--red-bright)] block mb-1">WhatsApp</strong>
+            <span class="text-[var(--text-secondary)]">Direct-response conversion path for Interior Design.</span>
+          </li>
+          <li class="border-b border-[var(--red-dark)] pb-4">
+            <strong class="text-[var(--red-bright)] block mb-1">AI / ChatGPT</strong>
+            <span class="text-[var(--text-secondary)]">Creative brainstorming and copy development support.</span>
+          </li>
+          <li>
+            <strong class="text-[var(--red-bright)] block mb-1">Spreadsheets</strong>
+            <span class="text-[var(--text-secondary)]">Campaign reporting and performance analysis.</span>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+</CaseStudyLayout>

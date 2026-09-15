@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<BaseLayout title={title}>
+  <div class="case-study-container py-10 md:py-16">
+    <div class="mb-12 font-mono text-sm text-[var(--text-muted)] tracking-widest flex justify-between items-center">
+      <a href="/" class="hover:text-[var(--red)] transition-colors flex items-center gap-3">
+        <span class="text-[var(--red)]">&larr;</span> BACK TO PORTFOLIO
+      </a>
+      <a href="/case-studies" class="hover:text-[var(--red)] transition-colors hidden md:block">
+        ALL CASE STUDIES
+      </a>
+    </div>
+    
+    <slot />
+  </div>
+</BaseLayout>

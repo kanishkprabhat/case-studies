@@ -1,0 +1,59 @@
+---
+interface Props {
+  name: string;
+  category: string;
+  description: string;
+  placeholderText: string;
+  patternIndex?: number;
+  funnelRole?: string;
+  videoUrl?: string;
+  aspectClass?: string;
+}
+const { name, category, description, placeholderText, patternIndex = 1, funnelRole, videoUrl, aspectClass = 'aspect-[4/3]' } = Astro.props;
+
+// Generate subtle variation in the placeholder pattern based on index
+const getPattern = (index: number) => {
+  if (index === 1) return `radial-gradient(circle at center, var(--red-dark) 0%, transparent 70%), linear-gradient(135deg, #3A0E14, #1B0B0F)`; // Spotlight
+  if (index === 2) return `linear-gradient(90deg, rgba(227, 41, 56, 0.05) 1px, transparent 1px), linear-gradient(rgba(227, 41, 56, 0.05) 1px, transparent 1px), #1B0B0F`; // Grid
+  if (index === 3) return `linear-gradient(45deg, #3A0E14 25%, transparent 25%, transparent 75%, #3A0E14 75%, #3A0E14), linear-gradient(45deg, #3A0E14 25%, transparent 25%, transparent 75%, #3A0E14 75%, #3A0E14), #1B0B0F`; // Checkered
+  if (index === 4) return `repeating-linear-gradient(45deg, #1B0B0F, #1B0B0F 10px, #260C12 10px, #260C12 20px)`; // Stripes
+  return `linear-gradient(135deg, #3A0E14, #1B0B0F)`; // Default
+};
+
+const bgStyle = getPattern(patternIndex);
+const bgSize = patternIndex === 2 ? '20px 20px' : patternIndex === 3 ? '20px 20px' : 'auto';
+const bgPosition = patternIndex === 3 ? '0 0, 10px 10px' : '0 0';
+---
+<div class="pixel-panel group flex flex-col h-full border border-[var(--red-dark)] hover:border-[var(--red)] transition-all duration-300 focus-within:ring-2 focus-within:ring-[var(--red)] focus-within:border-[var(--red)] bg-[var(--burgundy)]">
+  <div class={`media-placeholder min-h-[190px] ${aspectClass} flex items-center justify-center text-[var(--red-bright)] font-mono text-sm text-center relative overflow-hidden border-b border-[var(--red-dark)] group-hover:border-[var(--red)] transition-colors`} style={!videoUrl ? `background: ${bgStyle}; background-size: ${bgSize}; background-position: ${bgPosition};` : ''}>
+    
+    {videoUrl ? (
+      <video class="w-full h-full object-contain bg-black" controls playsinline>
+        <source src={videoUrl} type={videoUrl.endsWith('.mp4') ? 'video/mp4' : 'video/quicktime'} />
+        Your browser does not support the video tag.
+      </video>
+    ) : (
+      <div class="relative z-10 flex flex-col items-center gap-5 p-6">
+        <svg class="w-16 h-16 text-white/50 group-hover:text-white transition-all duration-300 drop-shadow-md group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <span class="text-[var(--text-secondary)] tracking-widest uppercase text-[11px] border border-[var(--text-muted)]/30 px-3 py-1 bg-black/40 backdrop-blur-sm">[ {placeholderText} ]</span>
+      </div>
+    )}
+    
+    {!videoUrl && <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>}
+  </div>
+  <div class="p-8 flex-grow flex flex-col">
+    <div class="flex justify-between items-start mb-5 gap-4">
+      <h4 class="font-mono text-white text-lg uppercase tracking-wider">{name}</h4>
+      <span class="text-[10px] font-mono bg-[var(--red-dark)] px-2.5 py-1 text-white uppercase shrink-0 border border-[var(--red)]">{category}</span>
+    </div>
+    <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.7] flex-grow mb-6">{description}</p>
+    {funnelRole && (
+      <div class="font-mono text-[11px] text-[var(--text-muted)] mb-6 tracking-widest p-3 border border-dashed border-[var(--red-dark)] bg-black/30">
+        <span class="text-[var(--red-bright)]">ROLE:</span> {funnelRole}
+      </div>
+    )}
+    <a href="#" class="mt-auto pt-5 border-t border-[var(--red-dark)] font-mono text-[12px] text-[var(--red-bright)] group-hover:text-white transition-colors uppercase tracking-widest outline-none inline-flex items-center gap-2">
+      VIEW CREATIVE <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+    </a>
+  </div>
+</div>

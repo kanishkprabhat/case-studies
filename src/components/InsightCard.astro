@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+}
+const { title, description, category } = Astro.props;
+---
+<div class="pixel-panel p-10 md:p-14 flex flex-col h-full border-t-4 border-t-[var(--red-dark)] hover:border-t-[var(--red)] transition-all duration-300 bg-[var(--burgundy)] hover:-translate-y-1 shadow-lg">
+  <div class="font-mono text-[11px] text-[var(--red-bright)] mb-6 tracking-widest uppercase">{category}</div>
+  <h4 class="font-pixel text-[20px] text-white mb-6 leading-tight">{title}</h4>
+  <p class="font-sans text-[15px] md:text-[16px] text-[var(--text-secondary)] leading-[1.8] flex-grow">
+    {description}
+  </p>
+</div>

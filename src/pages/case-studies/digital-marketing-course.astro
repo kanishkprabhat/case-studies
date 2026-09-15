@@ -1,0 +1,445 @@
+---
+import CaseStudyLayout from '../../components/CaseStudyLayout.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import CreativeCard from '../../components/CreativeCard.astro';
+import InsightCard from '../../components/InsightCard.astro';
+---
+
+<CaseStudyLayout title="Digital Marketing Course - Simulated Case Study">
+  
+  {/* Hero Section */}
+  <section class="relative h-[85vh] min-h-[650px] mb-12 rounded-sm overflow-hidden border-2 border-[var(--red-dark)] group shadow-2xl">
+    <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)] via-[var(--bg)]/80 to-[var(--red-dark)]/50 z-10"></div>
+    
+    {/* Background Pattern */}
+    <div class="absolute inset-0 bg-[var(--panel)] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGw0MCA0ME00MCAwbC00MCA0MCIgc3Ryb2tlPSIjRTMyOTM4IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=')] bg-repeat"></div>
+      
+      {/* Abstract video / play visual */}
+      <div class="relative w-full h-full flex flex-col items-center justify-center opacity-30">
+        <div class="w-48 h-32 border-2 border-[var(--red)] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div class="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-[var(--red-bright)] border-b-[15px] border-b-transparent ml-2"></div>
+        </div>
+      </div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 font-mono text-sm md:text-lg text-[var(--red-bright)] tracking-widest bg-black/70 px-8 py-4 border border-[var(--red-dark)] backdrop-blur-md whitespace-nowrap shadow-xl">[ YOUTUBE AD FORMAT ]</div>
+    </div>
+    
+    <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-16 lg:p-24">
+      <span class="inline-block px-5 py-2 bg-[var(--red-dark)] text-white font-mono text-[11px] md:text-sm mb-10 w-max tracking-widest border border-[var(--red)] shadow-sm uppercase">Simulated Portfolio Project</span>
+      <h1 class="font-pixel text-[clamp(1.8rem,6vw,3.5rem)] text-white mb-8 leading-[1.2] tracking-tight drop-shadow-lg">YOUTUBE<br/>LEAD GEN</h1>
+      <h2 class="font-sans text-[20px] text-white mb-6 font-bold tracking-wide">Digital Marketing Course — Local Education & Training</h2>
+      <p class="text-lg md:text-[19px] text-[var(--text-secondary)] max-w-3xl font-sans mb-14 leading-[1.8] drop-shadow-md">
+        A simulated YouTube video advertising campaign structured around a lead-generation objective for a digital marketing training institute.
+      </p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 font-mono text-[12px] md:text-[13px] border-t border-[var(--red-dark)] pt-10">
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Objective</span>
+          <span class="text-[var(--text-primary)]">Lead Generation</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Platform</span>
+          <span class="text-[var(--text-primary)]">Google Ads / YouTube</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Location</span>
+          <span class="text-[var(--text-primary)]">Delhi, Noida & Ghz</span>
+        </div>
+        <div>
+          <span class="block text-[var(--text-muted)] mb-2 tracking-widest uppercase">Budget</span>
+          <span class="text-[var(--text-primary)]">₹1,000/day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mb-12 font-sans text-[14px] text-[var(--text-muted)] bg-[var(--panel)] p-6 border-l-4 border-l-[var(--red-bright)] leading-relaxed">
+    <strong>Important:</strong> This is a simulated campaign created to demonstrate my approach to YouTube lead generation. No live campaign performance or conversion results are being claimed.
+  </div>
+
+  {/* Player / Campaign Identity Panel */}
+  <section class="section pt-0">
+    <div class="pixel-panel p-10 md:p-16 flex flex-col lg:flex-row gap-16 items-center lg:items-start shadow-2xl shadow-[var(--red-dark)]/20 border-t-[6px] border-t-[var(--red)] border-l-0 bg-[var(--burgundy)]">
+      
+      <div class="w-56 h-56 md:w-64 md:h-64 shrink-0 bg-black border-2 border-[var(--red-dark)] relative overflow-hidden group">
+        <img src="/pixel-assets/operator-avatar.jpg" alt="Kanishk Prabhat - Campaign Operator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-[var(--red)]/10 mix-blend-overlay pointer-events-none"></div>
+      </div>
+      
+      <div class="flex-grow flex flex-col justify-center pt-2 w-full">
+        <div class="font-mono text-[var(--text-muted)] text-[11px] md:text-[12px] mb-4 tracking-widest">CAMPAIGN STRATEGIST</div>
+        <h2 class="font-pixel text-2xl md:text-3xl text-[var(--text-primary)] mb-6 tracking-wide drop-shadow-sm">KANISHK PRABHAT</h2>
+        <div class="font-mono text-[var(--red-bright)] text-sm md:text-base mb-12 tracking-widest leading-[1.8] max-w-2xl">
+          PLANNING, AUDIENCE RESEARCH, SETUP & VIDEO CREATIVE
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 pt-10 border-t border-[var(--red-dark)]">
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">STATUS</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] flex items-center gap-3 tracking-wide">
+              <span class="w-2.5 h-2.5 rounded-full bg-[var(--text-muted)]"></span> PRE-LAUNCH
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">SYSTEM</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide">YOUTUBE VIDEO AD</div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">MISSION</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide leading-relaxed">GENERATE COURSE LEADS</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  {/* Project Overview */}
+  <section class="section">
+    <SectionHeading index="01" title="Project Overview" />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 mb-16">
+      <div>
+        <div class="prose prose-invert prose-p:text-[var(--text-secondary)] prose-p:font-sans prose-p:text-[15px] prose-p:leading-[1.75] max-w-none">
+          <p>The objective of this project was to develop a <strong>YouTube lead-generation campaign</strong> for a digital marketing training institute targeting people in Delhi, Noida and Ghaziabad who may be interested in learning digital marketing for career development, employment or business purposes.</p>
+          <p>Rather than treating YouTube simply as a video-awareness channel, I structured the campaign around a lead-generation objective, with the intended conversion being a prospective student's enquiry or demo-class booking.</p>
+        </div>
+      </div>
+      <div class="pixel-panel p-10 md:p-12 bg-[var(--panel)] border-l-4 border-l-[var(--red-dark)] border-t-0 border-r-0 border-b-0">
+        <h3 class="font-mono text-lg text-[var(--text-primary)] mb-8 tracking-wider uppercase">Conversion Journey</h3>
+        <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 font-mono text-[11px] text-center mb-8">
+          <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-3 flex-1">TARGET<br/>AUDIENCE</div>
+          <div class="text-[var(--red-bright)]">&rarr;</div>
+          <div class="bg-[var(--panel)] border border-[var(--red)] p-3 flex-1 text-white">YOUTUBE<br/>VIDEO AD</div>
+          <div class="text-[var(--red-bright)]">&rarr;</div>
+          <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-3 flex-1">LANDING<br/>PAGE</div>
+          <div class="text-[var(--red-bright)]">&rarr;</div>
+          <div class="bg-[var(--red-dark)] border border-[var(--red)] p-3 flex-1 text-white font-bold shadow-[2px_2px_0_0_var(--red)]">FREE<br/>DEMO</div>
+          <div class="text-[var(--red-bright)]">&rarr;</div>
+          <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-3 flex-1 text-[var(--text-secondary)]">LEAD</div>
+        </div>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.75]">
+          The creative was designed to move the viewer from a recognizable problem—difficulty finding opportunities—to a specific solution: acquiring practical digital marketing skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Audience Strategy */}
+  <section class="section">
+    <SectionHeading index="02" title="Audience Strategy" />
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-12">
+      I approached the audience from three different targeting perspectives rather than relying on one audience type.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      
+      <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-8">
+        <h4 class="font-mono text-[14px] text-white mb-6 pb-4 border-b border-[var(--red-dark)]">CUSTOM SEGMENTS</h4>
+        <p class="font-sans text-[13px] text-[var(--text-muted)] mb-6">Built around digital-marketing learning and career intent, capturing people actively showing interest.</p>
+        <ul class="list-disc pl-5 font-sans text-[14px] text-[var(--text-secondary)] space-y-2">
+          <li>Learn Digital Marketing</li>
+          <li>SEO Course</li>
+          <li>Google Ads Training</li>
+          <li>Meta Ads Course</li>
+          <li>Performance Marketing</li>
+        </ul>
+      </div>
+
+      <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-8">
+        <h4 class="font-mono text-[14px] text-white mb-6 pb-4 border-b border-[var(--red-dark)]">IN-MARKET AUDIENCES</h4>
+        <p class="font-sans text-[13px] text-[var(--text-muted)] mb-6">Introduced broader commercial, educational and career-related intent.</p>
+        <ul class="list-disc pl-5 font-sans text-[14px] text-[var(--text-secondary)] space-y-2">
+          <li>Business Services</li>
+          <li>Education</li>
+          <li>Job Seekers</li>
+          <li>Small Business Owners</li>
+          <li>Marketing & Advertising Services</li>
+        </ul>
+      </div>
+
+      <div class="bg-[var(--burgundy)] border border-[var(--red-dark)] p-8">
+        <h4 class="font-mono text-[14px] text-white mb-6 pb-4 border-b border-[var(--red-dark)]">AFFINITY AUDIENCES</h4>
+        <p class="font-sans text-[13px] text-[var(--text-muted)] mb-6">Explored broader groups whose interests or professional profiles could make training relevant.</p>
+        <ul class="list-disc pl-5 font-sans text-[14px] text-[var(--text-secondary)] space-y-2">
+          <li>Technology Enthusiasts</li>
+          <li>Entrepreneurs</li>
+          <li>Students</li>
+          <li>Business Professionals</li>
+          <li>Startup Owners</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="border-t border-[var(--red-dark)] pt-12">
+      <h3 class="font-mono text-[16px] text-white mb-8 uppercase tracking-widest">YouTube Search & Channel Intent</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8]">
+          <p class="mb-4">I researched YouTube-related search themes that could help identify people actively consuming digital-marketing learning content. (e.g. <em>Learn Google Ads, SEO Course, PPC Course</em>).</p>
+          <p>These were treated as <strong>audience-intent signals</strong>. Someone actively consuming tutorials is closer to consideration than someone with only a general interest in technology.</p>
+        </div>
+        <div class="bg-[var(--panel)] p-8 border-l-4 border-[var(--red-dark)]">
+          <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.8] mb-4">
+            I also researched relevant publishers (WsCube Tech, Surfside PPC, Neil Patel, Ahrefs, HubSpot). 
+          </p>
+          <p class="font-sans text-[14px] text-[var(--text-muted)] leading-[1.7]">
+            The purpose was to identify the type of content attracting the audience and potential contextual opportunities. I would <strong>not automatically target every channel</strong>; the research informs placement decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Creative Storyboard */}
+  <section class="section">
+    <SectionHeading index="03" title="30-Second Video Ad Concept" />
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-6">
+      The video creative was built around a simple progression: <strong class="text-white">Problem &rarr; Demand &rarr; Solution &rarr; Benefits &rarr; CTA</strong>.
+    </p>
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-12">
+      Rather than opening with a generic course advertisement, the creative starts with a pain point that the intended audience could recognize. <strong class="text-[var(--red-bright)]">Core message: Practical digital marketing skills can create more career opportunities.</strong>
+    </p>
+    
+    <div class="space-y-6">
+      
+      {/* Scene 1 */}
+      <div class="flex flex-col md:flex-row border border-[var(--red-dark)] bg-[var(--burgundy)] group hover:border-[var(--red)] transition-colors">
+        <div class="md:w-48 bg-[var(--panel)] p-6 border-b md:border-b-0 md:border-r border-[var(--red-dark)] flex flex-col justify-center text-center">
+          <div class="font-mono text-[var(--red-bright)] text-[12px] mb-2 tracking-widest">0-5 SEC</div>
+          <div class="font-pixel text-[18px] text-white">HOOK</div>
+        </div>
+        <div class="p-6 md:p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-[14px]">
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Visual</strong>
+            <p class="text-white">A young job seeker receiving rejected/unsuccessful job application notifications.</p>
+            <p class="text-[var(--text-muted)] mt-4"><em>On-screen: NO PRACTICAL SKILLS = LIMITED OPPORTUNITIES</em></p>
+          </div>
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Voice-Over</strong>
+            <p class="text-[var(--text-secondary)]">"Still searching for a high-paying job but getting no responses?"</p>
+            <p class="text-[var(--red-bright)] mt-4 text-[12px] italic">Purpose: Connect immediately with the viewer's career frustration.</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scene 2 */}
+      <div class="flex flex-col md:flex-row border border-[var(--red-dark)] bg-[var(--burgundy)] group hover:border-[var(--red)] transition-colors">
+        <div class="md:w-48 bg-[var(--panel)] p-6 border-b md:border-b-0 md:border-r border-[var(--red-dark)] flex flex-col justify-center text-center">
+          <div class="font-mono text-[var(--text-muted)] text-[12px] mb-2 tracking-widest">5-10 SEC</div>
+          <div class="font-pixel text-[18px] text-white">PROBLEM</div>
+        </div>
+        <div class="p-6 md:p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-[14px]">
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Visual</strong>
+            <p class="text-white">Digital marketing job listings and a skills-demand graphic.</p>
+          </div>
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Voice-Over</strong>
+            <p class="text-[var(--text-secondary)]">"Top businesses are actively hiring Digital Marketing experts with practical skills."</p>
+            <p class="text-[var(--red-bright)] mt-4 text-[12px] italic">Purpose: Shift from the individual's problem to market opportunity.</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scene 3 */}
+      <div class="flex flex-col md:flex-row border border-[var(--red-dark)] bg-[var(--burgundy)] group hover:border-[var(--red)] transition-colors">
+        <div class="md:w-48 bg-[var(--panel)] p-6 border-b md:border-b-0 md:border-r border-[var(--red-dark)] flex flex-col justify-center text-center">
+          <div class="font-mono text-[var(--text-muted)] text-[12px] mb-2 tracking-widest">10-20 SEC</div>
+          <div class="font-pixel text-[18px] text-[var(--red-bright)]">SOLUTION</div>
+        </div>
+        <div class="p-6 md:p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-[14px]">
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Visual</strong>
+            <p class="text-white">Training environment, Google Ads interface and students working on projects.</p>
+          </div>
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Voice-Over</strong>
+            <p class="text-[var(--text-secondary)]">"Join our hands-on course and master SEO, Google Ads, Meta Ads, and AI Tools on real live projects."</p>
+            <p class="text-[var(--red-bright)] mt-4 text-[12px] italic">Purpose: Position the course around practical application.</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scene 4 */}
+      <div class="flex flex-col md:flex-row border border-[var(--red-dark)] bg-[var(--burgundy)] group hover:border-[var(--red)] transition-colors">
+        <div class="md:w-48 bg-[var(--panel)] p-6 border-b md:border-b-0 md:border-r border-[var(--red-dark)] flex flex-col justify-center text-center">
+          <div class="font-mono text-[var(--text-muted)] text-[12px] mb-2 tracking-widest">20-25 SEC</div>
+          <div class="font-pixel text-[18px] text-white">BENEFITS</div>
+        </div>
+        <div class="p-6 md:p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-[14px]">
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Visual</strong>
+            <p class="text-white">Certification and interview-preparation imagery.</p>
+          </div>
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Voice-Over</strong>
+            <p class="text-[var(--text-secondary)]">"Get industry certifications, resume building, and placement support."</p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scene 5 */}
+      <div class="flex flex-col md:flex-row border border-[var(--red)] bg-[var(--panel)] shadow-[0_0_15px_rgba(227,41,56,0.15)] relative">
+        <div class="md:w-48 bg-[var(--red-dark)] p-6 border-b md:border-b-0 md:border-r border-[var(--red)] flex flex-col justify-center text-center">
+          <div class="font-mono text-white/70 text-[12px] mb-2 tracking-widest">25-30 SEC</div>
+          <div class="font-pixel text-[18px] text-white">THE CTA</div>
+        </div>
+        <div class="p-6 md:p-8 flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-[14px]">
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Visual</strong>
+            <p class="text-white">Digital Growth Institute branding and a prominent CTA: <strong>BOOK DEMO NOW</strong>.</p>
+          </div>
+          <div>
+            <strong class="text-[var(--text-muted)] block mb-1 uppercase tracking-widest text-[11px]">Voice-Over</strong>
+            <p class="text-[var(--text-secondary)]">"Seats are filling fast! Click below to book your FREE live demo class today!"</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  {/* Setup & Configuration */}
+  <section class="section">
+    <SectionHeading index="04" title="Campaign Configuration" />
+    <div class="pixel-panel overflow-x-auto border border-[var(--red-dark)] shadow-xl mb-12">
+      <table class="w-full text-left font-sans text-[14px]">
+        <tbody class="text-[var(--text-secondary)] divide-y divide-[var(--red-dark)] bg-[var(--burgundy)]">
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)] w-1/3">Campaign Name</td>
+            <td class="p-5 font-mono text-[13px]">YT_Digital_Marketing_Course_July2026</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Objective</td>
+            <td class="p-5 font-mono text-[13px]">Leads</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Campaign Type</td>
+            <td class="p-5 font-mono text-[13px]">Video</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Daily Budget</td>
+            <td class="p-5 font-mono text-[13px]">₹1,000</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Bidding</td>
+            <td class="p-5 font-mono text-[13px]">Maximize Conversions</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Location / Language</td>
+            <td class="p-5 font-mono text-[13px]">Delhi, Noida, Ghaziabad / English + Hindi</td>
+          </tr>
+          <tr class="hover:bg-[var(--panel)] transition-colors">
+            <td class="p-5 font-bold text-[var(--text-primary)]">Ad Group</td>
+            <td class="p-5 font-mono text-[13px]">AG_Digital_Marketing_Course</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="bg-[var(--panel)] p-8 border-l-4 border-[var(--red-dark)]">
+        <h4 class="font-mono text-[15px] text-white mb-4 uppercase tracking-widest">Optimised Targeting</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.8]">
+          I enabled Optimised Targeting in the setup. This creates an important testing consideration: the selected audience provides the initial targeting signal, while optimised targeting could expand reach beyond the manually defined audience when users are likely to convert.
+        </p>
+      </div>
+      <div class="bg-[var(--burgundy)] p-8 border border-[var(--red-dark)]">
+        <h4 class="font-mono text-[15px] text-[var(--red-bright)] mb-4 uppercase tracking-widest">Pre-Launch Analysis</h4>
+        <ul class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7] space-y-4 list-disc pl-5">
+          <li><strong>Conversion Tracking:</strong> Google Ads flagged actions as unverified. This must be verified before launch so the campaign can optimize against reliable lead signals.</li>
+          <li><strong>Budget Limitation:</strong> The ₹1,000/day budget was flagged as potentially restrictive. I would first establish if the campaign generates useful signals before blindly scaling budget.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* Measurement & Optimization */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <SectionHeading index="05" title="Measurement Framework" />
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-6">
+          The most important distinction would be between platform activity and actual business outcomes. A large number of views would not automatically mean the campaign was successful.
+        </p>
+        <ul class="space-y-6 font-sans text-[14px] text-[var(--text-secondary)]">
+          <li class="bg-[var(--panel)] p-5 border border-[var(--red-dark)]">
+            <strong class="text-white block mb-1">Delivery:</strong>
+            Impressions, reach, frequency, view rate, video engagement.
+          </li>
+          <li class="bg-[var(--panel)] p-5 border border-[var(--red-dark)]">
+            <strong class="text-white block mb-1">Traffic:</strong>
+            Click-through rate, clicks, landing-page sessions, cost per click.
+          </li>
+          <li class="bg-[var(--burgundy)] p-5 border-l-4 border-[var(--red)] shadow-md">
+            <strong class="text-[var(--red-bright)] block mb-1">Business Outcome:</strong>
+            <span class="text-white">Leads, cost per lead, demo bookings, qualified leads, enrolments.</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <SectionHeading index="06" title="Optimization Plan" />
+        <div class="prose prose-invert prose-p:text-[var(--text-secondary)] prose-p:font-sans prose-p:text-[14px] prose-p:leading-[1.75] max-w-none mb-8">
+          <p>After launch, I would look for differences between audiences, creative performance and conversion quality.</p>
+          <ul class="space-y-4">
+            <li><strong>Creative:</strong> Test career-opportunity, salary/job-frustration, practical-skills and career-transition hooks.</li>
+            <li><strong>Audience:</strong> Compare custom intent, in-market, affinity and optimised targeting.</li>
+            <li><strong>Geography:</strong> Compare performance between Delhi, Noida and Ghaziabad.</li>
+            <li><strong>Conversion quality:</strong> Do not optimize only for the cheapest lead. A ₹200 lead that never attends a demo may be less valuable than a ₹400 lead that becomes a qualified prospect.</li>
+          </ul>
+        </div>
+        
+        <div class="bg-[var(--burgundy)] p-6 border border-[var(--red-dark)]">
+          <h4 class="font-mono text-[13px] text-[var(--red-bright)] mb-4 tracking-widest uppercase">What I Would Improve Before Launch</h4>
+          <p class="font-sans text-[13px] text-[var(--text-secondary)] leading-[1.7] mb-2">
+            The biggest improvement is <strong>conversion-tracking validation</strong>. I would also rigorously test the landing-page experience:
+          </p>
+          <ul class="list-disc pl-5 font-sans text-[13px] text-[var(--text-muted)] space-y-1">
+            <li>Mobile load speed</li>
+            <li>Clarity of the course proposition</li>
+            <li>Visibility of the demo CTA</li>
+            <li>Trust signals & form friction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Takeaways */}
+  <section class="section">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div>
+        <SectionHeading index="07" title="Key Learning" />
+        <blockquote class="border-l-4 border-l-[var(--red)] pl-6 py-2 mb-8 bg-[var(--panel)] p-6 shadow-md font-sans text-[16px] text-white leading-[1.8] italic">
+          "The most important takeaway for me was that the creative and targeting strategy need to work together."
+        </blockquote>
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-6">
+          This project helped me understand that setting up a YouTube campaign is not simply about uploading a video. A career-focused audience may respond differently to a “job opportunity” hook than a business owner might respond to a “grow your business” message.
+        </p>
+        <div class="font-mono text-[11px] text-[var(--text-muted)] bg-black p-4 text-center border border-[var(--red-dark)]">
+          AUDIENCE &rarr; MESSAGE &rarr; CREATIVE &rarr; LANDING PAGE &rarr; CONVERSION
+        </div>
+      </div>
+      <div>
+        <SectionHeading index="08" title="Project Outcome" />
+        <div class="pixel-panel p-8 bg-[var(--burgundy)] border-l-4 border-l-[var(--red-dark)]">
+          <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-6">
+            Because this was a simulated campaign, I am not presenting fabricated impressions, clicks, leads, CPA or ROAS.
+          </p>
+          <strong class="text-white font-sans text-[14px] block mb-4">The deliverable demonstrates my ability to:</strong>
+          <ul class="list-disc pl-5 font-sans text-[14px] text-[var(--text-muted)] space-y-2">
+            <li>Plan a YouTube lead-generation campaign</li>
+            <li>Translate audience intent into targeting signals</li>
+            <li>Build a Google Ads video campaign & develop messaging</li>
+            <li>Create a complete 30-second video concept</li>
+            <li>Structure a conversion funnel</li>
+            <li>Identify pre-launch tracking and budget issues</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</CaseStudyLayout>
