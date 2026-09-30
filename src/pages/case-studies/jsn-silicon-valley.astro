@@ -1,0 +1,331 @@
+---
+import CaseStudyLayout from '../../components/CaseStudyLayout.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import MetricCard from '../../components/MetricCard.astro';
+import CreativeCard from '../../components/CreativeCard.astro';
+import InsightCard from '../../components/InsightCard.astro';
+---
+
+<CaseStudyLayout title="JSN Silicon Valley - Solar WhatsApp Lead Generation">
+  
+  {/* Hero Section */}
+  <section class="relative h-[85vh] min-h-[650px] mb-12 rounded-sm overflow-hidden border-2 border-[var(--red-dark)] group shadow-2xl">
+    <div class="absolute inset-0 bg-gradient-to-t from-[var(--bg)] via-[var(--bg)]/80 to-[var(--red-dark)]/50 z-10"></div>
+    
+    {/* Background Pattern */}
+    <div class="absolute inset-0 bg-[var(--panel)] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CiAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTAgMGw0MCA0ME00MCAwbC00MCA0MCIgc3Ryb2tlPSIjRTMyOTM4IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=')] bg-repeat"></div>
+      
+      {/* Abstract Sun / Solar Panel Visual */}
+      <div class="relative w-full h-full flex flex-col items-center justify-center opacity-20">
+        <div class="w-64 h-64 border-[3px] border-[var(--red-bright)] rounded-full flex items-center justify-center relative shadow-[0_0_50px_rgba(227,41,56,0.3)]">
+          <div class="absolute inset-0 border-[2px] border-dashed border-[var(--red-dark)] rounded-full animate-[spin_60s_linear_infinite]"></div>
+          <div class="w-32 h-16 bg-black border-2 border-[var(--red)] relative overflow-hidden backdrop-blur-sm">
+            <div class="absolute inset-0 flex">
+              <div class="flex-1 border-r border-[var(--red-dark)]"></div>
+              <div class="flex-1 border-r border-[var(--red-dark)]"></div>
+              <div class="flex-1 border-r border-[var(--red-dark)]"></div>
+              <div class="flex-1"></div>
+            </div>
+            <div class="absolute inset-0 flex flex-col">
+              <div class="flex-1 border-b border-[var(--red-dark)]"></div>
+              <div class="flex-1 border-b border-[var(--red-dark)]"></div>
+              <div class="flex-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 font-mono text-sm md:text-lg text-[var(--red-bright)] tracking-widest bg-black/70 px-8 py-4 border border-[var(--red-dark)] backdrop-blur-md whitespace-nowrap shadow-xl">[ SOLAR LEAD GEN ]</div>
+    </div>
+    
+    <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-16 lg:p-24">
+      <span class="inline-block px-5 py-2 bg-[var(--red-dark)] text-white font-mono text-[11px] md:text-sm mb-10 w-max tracking-widest border border-[var(--red)] shadow-sm uppercase">Meta Ads Campaign</span>
+      <h1 class="font-pixel text-[clamp(1.8rem,6vw,3.5rem)] text-white mb-8 leading-[1.2] tracking-tight drop-shadow-lg">JSN SILICON<br/>VALLEY</h1>
+      <h2 class="font-sans text-[20px] text-white mb-6 font-bold tracking-wide">Generating Solar Enquiries Through Meta Ads</h2>
+      <p class="text-lg md:text-[19px] text-[var(--text-secondary)] max-w-3xl font-sans mb-14 leading-[1.8] drop-shadow-md">
+        Designed and managed a Meta WhatsApp lead-generation campaign for a residential solar company targeting customers in Sambhal and nearby villages.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-mono border-t border-[var(--red-dark)] pt-10">
+        <div class="bg-[var(--burgundy)] p-6 border border-[var(--red-dark)]">
+          <span class="block text-[var(--red-bright)] text-3xl font-bold mb-2">238</span>
+          <span class="text-[var(--text-secondary)] tracking-widest uppercase text-sm">WhatsApp Conversations</span>
+        </div>
+        <div class="bg-[var(--burgundy)] p-6 border border-[var(--red-dark)]">
+          <span class="block text-[var(--red-bright)] text-3xl font-bold mb-2">₹18.01</span>
+          <span class="text-[var(--text-secondary)] tracking-widest uppercase text-sm">Cost / Conversation</span>
+        </div>
+        <div class="bg-[var(--burgundy)] p-6 border border-[var(--red-dark)]">
+          <span class="block text-[var(--red-bright)] text-3xl font-bold mb-2">₹4.3K</span>
+          <span class="text-[var(--text-secondary)] tracking-widest uppercase text-sm">Ad Spend</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Player / Campaign Identity Panel */}
+  <section class="section pt-0">
+    <div class="pixel-panel p-10 md:p-16 flex flex-col lg:flex-row gap-16 items-center lg:items-start shadow-2xl shadow-[var(--red-dark)]/20 border-t-[6px] border-t-[var(--red)] border-l-0 bg-[var(--burgundy)]">
+      
+      <div class="w-56 h-56 md:w-64 md:h-64 shrink-0 bg-black border-2 border-[var(--red-dark)] relative overflow-hidden group">
+        <img src="/pixel-assets/operator-avatar.jpg" alt="Kanishk Prabhat - Campaign Operator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-[var(--red)]/10 mix-blend-overlay pointer-events-none"></div>
+      </div>
+      
+      <div class="flex-grow flex flex-col justify-center pt-2 w-full">
+        <div class="font-mono text-[var(--text-muted)] text-[11px] md:text-[12px] mb-4 tracking-widest">PERFORMANCE MARKETING</div>
+        <h2 class="font-pixel text-2xl md:text-3xl text-[var(--text-primary)] mb-6 tracking-wide drop-shadow-sm">KANISHK PRABHAT</h2>
+        <div class="font-mono text-[var(--red-bright)] text-sm md:text-base mb-12 tracking-widest leading-[1.8] max-w-2xl">
+          META ADS STRATEGY, CREATIVE TESTING & WHATSAPP GENERATION
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 pt-10 border-t border-[var(--red-dark)]">
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">STATUS</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] flex items-center gap-3 tracking-wide">
+              <span class="w-2.5 h-2.5 rounded-full bg-[var(--text-muted)]"></span> COMPLETED
+            </div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">SYSTEM</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide">META ADS</div>
+          </div>
+          <div>
+            <div class="font-mono text-[11px] text-[var(--text-muted)] mb-3 tracking-widest uppercase">MISSION</div>
+            <div class="font-mono text-[13px] md:text-sm text-[var(--text-primary)] tracking-wide leading-relaxed">GENERATE WHATSAPP CONVERSATIONS</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  {/* The Challenge */}
+  <section class="section">
+    <SectionHeading index="01" title="The Challenge" />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-8">
+      <div class="prose prose-invert prose-p:text-[var(--text-secondary)] prose-p:font-sans prose-p:text-[15px] prose-p:leading-[1.75] max-w-none">
+        <p>JSN Silicon Valley wanted to generate enquiries from homeowners interested in installing residential solar systems in Sambhal and nearby villages.</p>
+        <p>The challenge was to communicate a relatively complex purchase—solar installation—through a simple local advertising message.</p>
+        <p>Potential customers had several concerns: <strong class="text-white">High electricity bills</strong>, <strong class="text-white">upfront installation costs</strong>, and the need for a local, trusted site assessment.</p>
+      </div>
+      <div class="bg-[var(--panel)] p-10 border border-[var(--red-dark)] border-l-4 border-l-[var(--red)]">
+        <h3 class="font-mono text-[14px] text-white mb-6 tracking-widest uppercase border-b border-[var(--red-dark)] pb-4">The WhatsApp Friction Shift</h3>
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-6">
+          Rather than sending users to a complex website or lead form, the campaign was designed around a lower-friction action:
+        </p>
+        <div class="font-mono text-lg text-[var(--red-bright)] uppercase tracking-wide">
+          &rarr; Start a conversation on WhatsApp.
+        </div>
+        <p class="font-sans text-[13px] text-[var(--text-muted)] mt-6 pt-4 border-t border-[var(--red-dark)]">
+          This allowed interested users to enquire directly with the business, mirroring local communication habits.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* Campaign Strategy */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div>
+        <SectionHeading index="02" title="Campaign Strategy" />
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-8">
+          I used a streamlined campaign structure, optimizing for Meta's Messaging Conversations objective. Keeping both creatives inside the same ad set allowed Meta's algorithm to distribute delivery while providing a direct comparison between two different customer motivations.
+        </p>
+        
+        <div class="bg-[var(--burgundy)] p-8 border border-[var(--red-dark)] font-mono text-[13px] leading-[2.2] tracking-wide text-[var(--text-secondary)] mb-8">
+          <div><strong class="text-white">CAMPAIGN</strong></div>
+          <div class="pl-4 text-[var(--red-bright)]">↓</div>
+          <div class="pl-4"><strong class="text-white">1 AD SET</strong></div>
+          <div class="pl-8 text-[var(--red-bright)]">↓</div>
+          <div class="pl-8"><span class="text-white border-b border-dashed border-[var(--text-muted)]">Subsidy Creative</span>  |  <span class="text-white border-b border-dashed border-[var(--text-muted)]">Bill Creative</span></div>
+          <div class="pl-12 text-[var(--red-bright)]">↓</div>
+          <div class="pl-12"><strong class="text-white">WHATSAPP CTA</strong></div>
+        </div>
+        
+        <div class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.8] bg-[var(--panel)] p-6 border-l-4 border-[var(--red-dark)]">
+          <strong class="text-white block mb-2">Two core messaging angles were tested:</strong>
+          <ul class="list-disc pl-5 space-y-2">
+            <li><strong>Angle 1 — Government Subsidy:</strong> Focus on reducing the perceived financial barrier to installing solar.</li>
+            <li><strong>Angle 2 — Electricity Bill Savings:</strong> Focus on the customer's recurring pain point: their electricity bill.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+        <SectionHeading index="03" title="The Funnel" />
+        <p class="font-sans text-[15px] text-[var(--text-secondary)] leading-[1.8] mb-8">
+          The campaign's measurable objective was the first step of the funnel (starting WhatsApp conversations), driving toward eventual qualification and installation.
+        </p>
+        
+        <div class="flex flex-col space-y-4">
+          <div class="pixel-panel p-4 text-center border-[var(--red-dark)] bg-black/40">
+            <span class="font-mono text-sm tracking-widest text-[var(--text-muted)]">190K IMPRESSIONS</span>
+          </div>
+          <div class="text-center text-[var(--red)]">&darr;</div>
+          <div class="pixel-panel p-4 text-center border-[var(--red-dark)] bg-black/60">
+            <span class="font-mono text-sm tracking-widest text-[var(--text-muted)]">83K REACH</span>
+          </div>
+          <div class="text-center text-[var(--red)]">&darr;</div>
+          <div class="pixel-panel p-4 text-center border-[var(--red)] bg-[var(--red-dark)]/20 shadow-[0_0_15px_rgba(227,41,56,0.15)]">
+            <span class="font-mono font-bold text-lg tracking-widest text-white">238 WHATSAPP CONVERSATIONS</span>
+          </div>
+          <div class="text-center text-[var(--red)]">&darr;</div>
+          <div class="pixel-panel p-4 text-center border-[var(--red-dark)] border-dashed bg-black/40">
+            <span class="font-mono text-[11px] tracking-widest text-[var(--text-muted)]">SALES FOLLOW-UP &rarr; SITE VISIT &rarr; INSTALLATION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Creative Testing */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <SectionHeading index="04" title="Creative Testing" />
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-12">
+      Two core messaging angles were tested against each other. This was more useful than simply testing two visually different designs: we were effectively testing <strong class="text-white">Financial incentive vs. Recurring savings</strong>.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+      
+      {/* Creative 1: Subsidy */}
+      <div class="flex flex-col">
+        <CreativeCard 
+          name="Subsidy Angle" 
+          category="FINANCIAL INCENTIVE" 
+          description="Focus on reducing the perceived financial barrier to installing solar. The creative answered the biggest potential objection ('Solar is expensive') by leading with the ₹1,08,000 government subsidy." 
+          placeholderText="SUBSIDY CREATIVE" 
+          patternIndex={1}
+          imageUrl="/images/jsn-solar/subsidy-creative.jpg"
+          aspectClass="aspect-[4/5]"
+        />
+        <div class="mt-6 pixel-panel p-6 bg-[var(--panel)] border-l-4 border-[var(--red-bright)]">
+          <div class="font-mono text-2xl text-white mb-2">214 <span class="text-sm text-[var(--text-muted)]">CONVERSATIONS</span></div>
+          <div class="font-mono text-[14px] text-[var(--red-bright)] tracking-widest">₹16.65 / CONVERSATION</div>
+        </div>
+      </div>
+
+      {/* Creative 2: Bill */}
+      <div class="flex flex-col">
+        <CreativeCard 
+          name="Electricity Bill Angle" 
+          category="RECURRING SAVINGS" 
+          description="Focus on the customer's recurring pain point: their electricity bill. Instead of talking about the purchase itself, this creative focused on the desired outcome—a ₹0 electricity bill." 
+          placeholderText="BILL CREATIVE" 
+          patternIndex={2}
+          imageUrl="/images/jsn-solar/bill-creative.jpg"
+          aspectClass="aspect-[4/5]"
+        />
+        <div class="mt-6 pixel-panel p-6 bg-[var(--burgundy)] border border-[var(--red-dark)]">
+          <div class="font-mono text-2xl text-white mb-2">24 <span class="text-sm text-[var(--text-muted)]">CONVERSATIONS</span></div>
+          <div class="font-mono text-[14px] text-[var(--text-secondary)] tracking-widest">₹30.20 / CONVERSATION</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  {/* Performance */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <SectionHeading index="05" title="Performance Overview" />
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-12">
+      Campaign results for the reporting period (31 Aug – 29 Sep 2026).
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <MetricCard label="Ad Spend" value="₹4.3K" trend="" />
+      <MetricCard label="Conversations" value="238" trend="Generated" />
+      <MetricCard label="Cost / Conv" value="₹18.01" trend="Average" />
+      <MetricCard label="Impressions" value="190K+" trend="" />
+      <MetricCard label="Reach" value="83K+" trend="" />
+    </div>
+  </section>
+
+  {/* Optimization */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <SectionHeading index="06" title="Optimization Thinking" />
+    <p class="font-sans text-[16px] text-[var(--text-secondary)] leading-[1.8] max-w-4xl mb-12">
+      The campaign wasn't evaluated purely on the number of conversations. I looked at <strong class="text-white">Creative &rarr; Placement &rarr; Cost per conversation</strong>.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="pixel-panel p-8 bg-[var(--burgundy)] border border-[var(--red-dark)]">
+        <h4 class="font-mono text-[14px] text-white tracking-widest uppercase mb-8 border-b border-[var(--red-dark)] pb-4">Placement Efficiency</h4>
+        
+        <div class="space-y-6 font-sans text-[14px]">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-[var(--text-secondary)]">Facebook Reels</span>
+              <strong class="text-[var(--red-bright)] font-mono">₹12.57</strong>
+            </div>
+            <div class="w-full bg-black h-2 rounded-full overflow-hidden border border-[var(--red-dark)]"><div class="bg-[var(--red-bright)] h-full" style="width: 44%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-[var(--text-secondary)]">Facebook Feed</span>
+              <strong class="text-[var(--red-bright)] font-mono">₹13.96</strong>
+            </div>
+            <div class="w-full bg-black h-2 rounded-full overflow-hidden border border-[var(--red-dark)]"><div class="bg-[var(--red-bright)] h-full" style="width: 48%"></div></div>
+          </div>
+          <div class="pt-4 mt-2 border-t border-[var(--red-dark)]/50">
+            <div class="flex justify-between mb-2">
+              <span class="text-[var(--text-muted)]">Instagram Reels</span>
+              <strong class="text-[var(--text-muted)] font-mono">₹26.50</strong>
+            </div>
+            <div class="w-full bg-black h-2 rounded-full overflow-hidden border border-[var(--red-dark)]"><div class="bg-[var(--text-muted)] h-full" style="width: 92%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-[var(--text-muted)]">Instagram Feed</span>
+              <strong class="text-[var(--text-muted)] font-mono">₹28.84</strong>
+            </div>
+            <div class="w-full bg-black h-2 rounded-full overflow-hidden border border-[var(--red-dark)]"><div class="bg-[var(--text-muted)] h-full" style="width: 100%"></div></div>
+          </div>
+        </div>
+        <p class="mt-8 font-sans text-[13px] text-[var(--text-secondary)] leading-[1.6]">
+          <strong>Headline:</strong> Facebook placements delivered lower conversation costs than Instagram during the detailed reporting period.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <InsightCard 
+          title="Creative Winner" 
+          description="The subsidy-led creative received the majority of delivery and generated conversations at a 45% lower cost than the bill-led creative (₹16.65 vs ₹30.20)."
+        />
+        <InsightCard 
+          title="Messaging Resonance" 
+          description="The subsidy creative's strong performance suggested that financial assistance messaging resonated more strongly with the audience than a direct '₹0 bill' proposition."
+        />
+      </div>
+    </div>
+  </section>
+
+  {/* Takeaways */}
+  <section class="section border-t border-[var(--red-dark)] pt-16">
+    <SectionHeading index="07" title="Takeaways" />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="pixel-panel p-8 bg-[var(--burgundy)] border border-[var(--red-dark)]">
+        <div class="font-mono text-3xl text-[var(--red-dark)] mb-4 font-bold">01</div>
+        <h4 class="font-mono text-[14px] text-white mb-4 uppercase tracking-widest">Lead with the strongest value proposition</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7]">
+          The subsidy-focused creative generated the majority of conversations by giving users a concrete economic reason to investigate solar.
+        </p>
+      </div>
+      <div class="pixel-panel p-8 bg-[var(--burgundy)] border border-[var(--red-dark)]">
+        <div class="font-mono text-3xl text-[var(--red-dark)] mb-4 font-bold">02</div>
+        <h4 class="font-mono text-[14px] text-white mb-4 uppercase tracking-widest">Look beyond campaign-level averages</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7]">
+          Placement-level analysis revealed meaningful differences in acquisition cost. Campaign averages can hide major differences between Facebook and Instagram inventory.
+        </p>
+      </div>
+      <div class="pixel-panel p-8 bg-[var(--panel)] border-t-[4px] border-[var(--red)]">
+        <div class="font-mono text-3xl text-[var(--red)] mb-4 font-bold">03</div>
+        <h4 class="font-mono text-[14px] text-white mb-4 uppercase tracking-widest">Track lead quality, not just volume</h4>
+        <p class="font-sans text-[14px] text-[var(--text-secondary)] leading-[1.7]">
+          Cheap conversations aren't automatically good leads. The next iteration should connect WhatsApp conversations to qualification, site visits and installations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</CaseStudyLayout>

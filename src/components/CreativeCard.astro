@@ -7,9 +7,10 @@ interface Props {
   patternIndex?: number;
   funnelRole?: string;
   videoUrl?: string;
+  imageUrl?: string;
   aspectClass?: string;
 }
-const { name, category, description, placeholderText, patternIndex = 1, funnelRole, videoUrl, aspectClass = 'aspect-[4/3]' } = Astro.props;
+const { name, category, description, placeholderText, patternIndex = 1, funnelRole, videoUrl, imageUrl, aspectClass = 'aspect-[4/3]' } = Astro.props;
 
 // Generate subtle variation in the placeholder pattern based on index
 const getPattern = (index: number) => {
@@ -25,13 +26,15 @@ const bgSize = patternIndex === 2 ? '20px 20px' : patternIndex === 3 ? '20px 20p
 const bgPosition = patternIndex === 3 ? '0 0, 10px 10px' : '0 0';
 ---
 <div class="pixel-panel group flex flex-col h-full border border-[var(--red-dark)] hover:border-[var(--red)] transition-all duration-300 focus-within:ring-2 focus-within:ring-[var(--red)] focus-within:border-[var(--red)] bg-[var(--burgundy)]">
-  <div class={`media-placeholder min-h-[190px] ${aspectClass} flex items-center justify-center text-[var(--red-bright)] font-mono text-sm text-center relative overflow-hidden border-b border-[var(--red-dark)] group-hover:border-[var(--red)] transition-colors`} style={!videoUrl ? `background: ${bgStyle}; background-size: ${bgSize}; background-position: ${bgPosition};` : ''}>
+  <div class={`media-placeholder min-h-[190px] ${aspectClass} flex items-center justify-center text-[var(--red-bright)] font-mono text-sm text-center relative overflow-hidden border-b border-[var(--red-dark)] group-hover:border-[var(--red)] transition-colors`} style={(!videoUrl && !imageUrl) ? `background: ${bgStyle}; background-size: ${bgSize}; background-position: ${bgPosition};` : ''}>
     
     {videoUrl ? (
       <video class="w-full h-full object-contain bg-black" controls playsinline>
         <source src={videoUrl} type={videoUrl.endsWith('.mp4') ? 'video/mp4' : 'video/quicktime'} />
         Your browser does not support the video tag.
       </video>
+    ) : imageUrl ? (
+      <img src={imageUrl} alt={name} class="w-full h-full object-contain bg-black" />
     ) : (
       <div class="relative z-10 flex flex-col items-center gap-5 p-6">
         <svg class="w-16 h-16 text-white/50 group-hover:text-white transition-all duration-300 drop-shadow-md group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -39,7 +42,7 @@ const bgPosition = patternIndex === 3 ? '0 0, 10px 10px' : '0 0';
       </div>
     )}
     
-    {!videoUrl && <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>}
+    {(!videoUrl && !imageUrl) && <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>}
   </div>
   <div class="p-8 flex-grow flex flex-col">
     <div class="flex justify-between items-start mb-5 gap-4">
